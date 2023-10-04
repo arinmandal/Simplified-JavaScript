@@ -1,1 +1,2 @@
-Learn JavaScript the easy way with Simplified JavaScript: A project-based approach to mastering the basics. 
+# Simplified JavaScript
+Learn JavaScript the easy way with Simplified JavaScript: A project-based approach to mastering the basics.
