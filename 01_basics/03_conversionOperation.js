@@ -65,7 +65,9 @@ num1 = num2 = num3 = 2 + 2
 // console.log(num1, num2, num3)
 let gameCounter = 100
 ++gameCounter;
-// console.log(gameCounter);
+let newGameCount = gameCounter++;
+// console.log(newGameCount++);
+// console.log(newGameCount++)
 
 // link to study
 // https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
