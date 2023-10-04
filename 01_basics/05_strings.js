@@ -7,7 +7,7 @@ const repoCount = 50
 
 const gameName = new String('mazeOfMovies.com')
 
-console.log(gameName[0]);
+// console.log(gameName[0]);
 // console.log(gameName.__proto__);
 
 
@@ -29,8 +29,12 @@ const newStringOne = "   webdevsimplified    "
 
 const url = "https://google.com/hitesh%20choudhary"
 
-console.log(url.replace('%20', '-'))
+// console.log(url.replace('%20', '-'))
 
 // console.log(url.includes('sundar'))
 
 // console.log(gameName.split('-'));
+
+const newStrings = new String ('Bagdoba Jalpai');
+
+console.log(newString.bold)
