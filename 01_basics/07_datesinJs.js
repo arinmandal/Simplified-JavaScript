@@ -1,12 +1,24 @@
 // Dates
+//* JavaScript Date objects represent a single moment in time in a platform-independent format. Date objects encapsulate an integral number that represents milliseconds since the midnight at the beginning of January 1, 1970, UTC (the epoch).
+
 let myDate = new Date()
 // console.log(myDate)
-// console.log(myDate.toString());
-// console.log(myDate.toDateString());
-// console.log(myDate.toLocaleString());
-// console.log(typeof myDate);
-// console.log(myDate.getFullYear())
-// console.log(myDate.getDate())
+// Returns a string representation of a date. The format of the string depends on the locale. 
+//*!Wed Oct 04 2023 16: 56: 17 GMT +0530(India Standard Time)
+console.log(myDate.toString());
+// Returns a date as a string value.
+// *!Wed Oct 04 2023
+console.log(myDate.toDateString());
+// Converts a date and time to a string by using the current or specified locale.
+//*! 10/4/2023, 4:56:17 PM
+console.log(myDate.toLocaleString());
+
+// Gets the year, using local time.
+//*!2023
+console.log(myDate.getFullYear())
+
+console.log(typeof myDate);
+console.log(myDate.getDate())
 
 // let myCreatedDate = new Date(2023, 0, 23)
 // let myCreatedDate = new Date(2023, 0, 23, 5, 3)
