@@ -1,19 +1,20 @@
 // for of
-
+// The JavaScript for of statement loops through the values of an iterable object.
+// It lets you loop over iterable data structures such as Arrays, Strings, Maps, NodeLists, and more.
 // ["", "", ""]
 // [{}, {}, {}]
 
 const arr = [1, 2, 3, 4, 5]
 
 for (const num of arr) {
-    //console.log(num);
+    // console.log(num);
 }
 
-const greetings = "Hello world!"
+const greetings = "Namaste JavaScript"
+
 for (const greet of greetings) {
-    //console.log(`Each char is ${greet}`)
+    console.log(greet);
 }
-
 // Maps
 
 const map = new Map()

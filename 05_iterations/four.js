@@ -5,14 +5,18 @@ const myObject = {
     swift: "swift by apple"
 }
 
-for (const key in myObject) {
-    //console.log(`${key} shortcut is for ${myObject[key]}`);
-}
+// For In Loops
+// The JavaScript for in statement loops through the properties of an Object
+
+
+// for (const key in myObject) {
+//     console.log(`${key} shortcut for ${myObject[key]}`);
+// }
 
 const programming = ["js", "rb", "py", "java", "cpp"]
 
 for (const key in programming) {
-    //console.log(programming[key]);
+    console.log(programming[key]);
 }
 
 // const map = new Map()

@@ -1,22 +1,31 @@
+// forEach()
+
+// The forEach() method of Array instances executes a provided function once for each array element.
+
+const num = ["1", "2", "3", "4", "5"]
+// num.forEach((num) => console.log(num)); 
+
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
-// coding.forEach( function (val){
-//     console.log(val);
-// } )
+// coding.forEach((item) => console.log(item));
 
 // coding.forEach( (item) => {
 //     console.log(item);
 // } )
 
+// normal function
 // function printMe(item){
 //     console.log(item);
 // }
 
+// function reference
 // coding.forEach(printMe)
+
+// Full Array, index, item
 
 // coding.forEach( (item, index, arr)=> {
 //     console.log(item, index, arr);
-// } )
+// })
 
 const myCoding = [
     {
@@ -34,6 +43,5 @@ const myCoding = [
 ]
 
 myCoding.forEach( (item) => {
-    
-    console.log(item.languageName);
+    console.log(item.languageFileName);
 } )
