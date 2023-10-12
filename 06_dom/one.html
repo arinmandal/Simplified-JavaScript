@@ -29,37 +29,36 @@
         <li class="list-item">four</li>
       </ul>
     </div>
-
-
-    <script type="text/javascript">
-      const title = document.getElementById("title");
-
-      title.style.backgroundColor = "grey";
-      title.style.color = "red";
-      title.style.borderRadius = "10px";
-      title.style.padding = "12px 5px";
-      //   textContent gets the content of all elements, including <script> and <style> elements. In contrast, innerText only shows "human-readable" elements.
-      //   textContent returns every element in the node. In contrast, innerText is aware of styling and won't return the text of "hidden" elements.
-      // Moreover, since innerText takes CSS styles into account, reading the value of innerText triggers a reflow to ensure up-to-date computed styles. (Reflows can be computationally expensive, and thus should be avoided when possible.
-
-    //   console.log(title.textContent);
-    //   console.log(title.innerHTML);
-    //   console.log(title.innerText);
-
-    // The Document method querySelector() returns the first Element within the document that matches the specified selector, or group of selectors. If no matches are found, null is returned.
-    // const list = document.querySelector("li")
-    // list.style.color = "red";
-
-    // NodeList
-    // const list = document.querySelectorAll('li');
-    // list.forEach((li) => li.style.color = "red")
-
-    const listItems = document.getElementsByClassName('list-item');
-    // console.log(listItems)
-
-    const convertedArray = Array.from(listItems);
-    // console.log(convertedArray);
-    convertedArray.map((arr) => arr.style.color = 'green')
-    </script>
   </body>
+  <script type="text/javascript">
+    const title = document.getElementById("title");
+
+    title.style.backgroundColor = "grey";
+    title.style.color = "red";
+    title.style.borderRadius = "10px";
+    title.style.padding = "12px 5px";
+    //   textContent gets the content of all elements, including <script> and <style> elements. In contrast, innerText only shows "human-readable" elements.
+    //   textContent returns every element in the node. In contrast, innerText is aware of styling and won't return the text of "hidden" elements.
+    // Moreover, since innerText takes CSS styles into account, reading the value of innerText triggers a reflow to ensure up-to-date computed styles. (Reflows can be computationally expensive, and thus should be avoided when possible.
+
+  //   console.log(title.textContent);
+  //   console.log(title.innerHTML);
+  //   console.log(title.innerText);
+
+  // The Document method querySelector() returns the first Element within the document that matches the specified selector, or group of selectors. If no matches are found, null is returned.
+  // const list = document.querySelector("li")
+  // list.style.color = "red";
+
+  // NodeList
+  // const list = document.querySelectorAll('li');
+  // list.forEach((li) => li.style.color = "red")
+
+  const listItems = document.getElementsByClassName('list-item');
+  // console.log(listItems)
+
+  const convertedArray = Array.from(listItems);
+  // console.log(convertedArray);
+  convertedArray.map((arr) => arr.style.color = 'green')
+  
+  </script>
 </html>
