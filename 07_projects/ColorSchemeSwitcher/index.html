@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Scheme Switcher</title>
+    <style>
+      body {
+        height: 100%;
+        width: 100%;
+        font-family: roboto;
+        /* background-color: rgb(180, 178, 178); */
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+      span {
+        display: block;
+        height: 100px;
+        width: 100px;
+        margin-right: 4px;
+      }
+      h1 {
+        text-align: center;
+        color: rgb(26, 26, 26);
+      }
+      #grey {
+        background-color: grey;
+      }
+      #red {
+        background-color: red;
+      }
+      #green {
+        background-color: green;
+      }
+      #blue {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Color Scheme Switcher</h1>
+    <div class="container">
+      <span class="button" id="grey"></span>
+      <span class="button" id="red"></span>
+      <span class="button" id="green"></span>
+      <span class="button" id="blue"></span>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
