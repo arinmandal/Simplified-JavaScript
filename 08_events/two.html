@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Chai aur code</h1>
-    <button id="stop">Stop</button>
-</body>
-<script>
-    const sayHitesh = function(){
-        console.log("Hitesh");
-    }
-    const changeText = function(){
-        document.querySelector('h1').innerHTML = "best JS series"
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asynchronous JavaScript</title>
+  </head>
+  <body>
+    <h1>Asynchronous JavaScript</h1>
+    <button id="btn">STOP</button>
+  </body>
+  <script>
+    const changeHeading = () => {
+      document.querySelector("h1").innerHTML = "Simplified JavaScript";
+      document.querySelector("h1").style.color = "red";
+    };
 
-    const changeMe = setTimeout(changeText, 2000)
-
-    document.querySelector('#stop').addEventListener('click', function(){
-        clearTimeout(changeMe)
-        console.log("STOPPED")
-    })
-</script>
+    const changeTime = setTimeout(changeHeading, 3000);
+    document.querySelector("#btn").addEventListener("click", () => {
+      clearTimeout(changeTime);
+      document.querySelector("body").style.backgroundColor = "red";
+    });
+  </script>
 </html>
