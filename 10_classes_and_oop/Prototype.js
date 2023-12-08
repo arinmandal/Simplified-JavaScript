@@ -66,4 +66,4 @@ anotherUsername.trueLength()
 // console.log(TASupport.__proto__)
 // TASupport.__proto__;
 
-// console.log(Teacher.__proto__)
+console.log(Teacher.__proto__)
