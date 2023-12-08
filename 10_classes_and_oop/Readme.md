@@ -10,6 +10,9 @@ Part of OOP
 - Object literals
 - Constructor function
 - Prototypes
+  - ![Prototype hierachy](Untitled-2023-12-07-1026.png)
+
+
 - Instances(new, this)
 
 Pillars of OOP
