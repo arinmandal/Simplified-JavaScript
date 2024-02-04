@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>counter</title>
+  </head>
+  <body>
+    <h3>3</h3>
+
+    <button id="btn">Start</button>
+    <button id="stop">Stop</button>
+    <script>
+      var count = 0;
+      let btn = document.getElementById("btn");
+      let stop = document.getElementById("stop");
+      let interval;
+      btn.addEventListener("click", () => {
+        interval = setInterval(() => {
+          count++;
+          document.querySelector("h3").textContent = count;
+        }, 1000);
+      });
+      stop.addEventListener("click", () => {
+        clearInterval(interval);
+      });
+    </script>
+  </body>
+</html>

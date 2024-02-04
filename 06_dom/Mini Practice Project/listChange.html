@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Change MINI TODO</title>
+</head>
+<body>
+  <h2>List Manupulate</h2>
+  <ul id="list">
+    <li>Coffee</li>
+  </ul>
+  <input type="text" placeholder="Enter what you want">
+  <button id="Add">Add</button>
+  <button id="Remove">Remove</button>
+  <script>
+    let list = document.getElementById("list");
+    let Add = document.getElementById("Add");
+    let Remove = document.getElementById("Remove");
+    let input = document.querySelector("input");
+    let li;
+    Add.addEventListener("click", () => {
+      li = document.createElement("li");
+      li.textContent = input.value;
+      list.appendChild(li);
+    });
+    Remove.addEventListener("click", () => {
+      list.removeChild(li);
+    });    
+  </script>
+</body>
+</html>

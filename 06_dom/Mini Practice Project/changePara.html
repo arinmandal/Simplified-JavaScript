@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Dom</title>
+</head>
+<body>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, vel. </p>
+
+<button id="btn">
+Click to change the paragraph
+</button>
+
+<script>
+  let btn = document.getElementById('btn');
+  let p = document.querySelector('p');
+
+  btn.addEventListener('click', () =>{
+    p.textContent = "Embrace the challenges, keep learning, and stay persistent. Your dream job is out there waiting for you! 🚀💪"
+  })
+
+</script>
+</body>
+</html>

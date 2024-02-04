@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Valid</title>
+  </head>
+  <body>
+    <h3>From Valid</h3>
+
+    <input type="text" placeholder="Enter something...." />
+    <button id="btn">Submit</button>
+
+    <script>
+      let btn = document.getElementById("btn");
+      let input = document.querySelector("input");
+
+      btn.addEventListener("click", () => {
+        if (input.value === "") {
+          input.style.borderColor = "red";
+          let errMessage = document.createElement("p");
+          errMessage.style.color = "red";
+          errMessage.textContent = "Please enter something";
+          document.body.appendChild(errMessage);
+
+        } else {
+          let something = document.createElement("p");
+          something.textContent = `You typed : ${input.value}`;
+          document.body.appendChild(something);
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Count</title>
+</head>
+<body>
+  <h2>Word Counter</h2>
+  <textarea name="" id="" cols="30" rows="10" placeholder="Write Here ...."></textarea>
+  <h3>Character count :<span>0<span></h3>
+    <script>
+      let input = document.querySelector("textarea");
+      let span = document.querySelector("span");
+      input.addEventListener("keyup", () => {
+        span.textContent =input.value.length;
+      });
+    </script>
+</body>
+</html>
