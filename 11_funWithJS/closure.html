@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closure</title>
+  </head>
+  <body>
+    <h3>Change background with closure</h3>
+    <button id="red">Red</button>
+    <button id="blue">Blue</button>
+    <button id="crimson">Crimson</button>
+
+    <script>
+      // bad approch
+      // document.getElementById('red').onclick = () => {
+      //   document.body.style.backgroundColor = 'red';
+      // }
+      // document.getElementById('blue').onclick = () => {
+      //   document.body.style.backgroundColor = 'blue';
+      // }
+      // document.getElementById('crimson').onclick = () => {
+      //   document.body.style.backgroundColor = 'crimson';
+      // }
+
+      // change with function
+
+      function chnageColor(color) {
+        return () => {
+          document.body.style.backgroundColor = `${color}`;
+        };
+      }
+      document.getElementById("red").onclick = chnageColor("red");
+      document.getElementById("blue").onclick = chnageColor("blue");
+      document.getElementById("crimson").onclick = chnageColor("crimson");
+    </script>
+  </body>
+</html>
