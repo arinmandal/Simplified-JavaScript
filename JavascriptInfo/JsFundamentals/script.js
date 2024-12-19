@@ -47,3 +47,23 @@ let currentVisitorName = 'John';
 // shows a message asking the user to input text. It returns the text or, if Cancel button or Esc is clicked, null.
 // confirm
 // shows a message and waits for the user to press “OK” or “Cancel”. It returns true for OK and false for Cancel/Esc.
+
+//? Type Conversions
+// String Conversion
+let value = true;
+// console.log(typeof value); // boolean
+
+value = String(value); // now value is a string "true"
+// console.log(typeof value); // string
+
+// Numeric Conversion
+// console.log("6" / "2"); // Output: 3, strings are converted to numbers
+
+// Boolean Conversion
+//console.log(Boolean(1)); // Output: true
+//console.log(Boolean(0)); // Output: false
+//console.log(Boolean("hello")); // Output: true
+//console.log(Boolean("")); // Output: false
+//console.log(Boolean("0")); // Output: true
+//console.log(Boolean(" ")); // Output: true
+
