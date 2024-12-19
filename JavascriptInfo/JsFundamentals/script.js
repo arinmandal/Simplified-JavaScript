@@ -67,3 +67,40 @@ value = String(value); // now value is a string "true"
 //console.log(Boolean("0")); // Output: true
 //console.log(Boolean(" ")); // Output: true
 
+//? Basic Operators
+//TODO: Task 1
+// * The postfix and prefix forms
+// let a = 1, b = 1;
+// let c = ++a; // 2;
+// let d = b++; // 1;
+
+// TODO: Task 2
+// * Assignment result
+let x = 2;
+
+let y = 1 + (x *= 2);
+// console.log(y); // Output: 5
+
+// TODO: Task 3
+//* Type conversions
+"" + 1 + 0 // Output: 10
+"" - 1 + 0 // Output:
+true + false // Output: 1 
+6 / "3" // Output: 2
+"2" * "3" // Output: 6
+4 + 5 + "px" // Output: 9px
+"$" + 4 + 5 // Output: $45
+"4" - 2 // Output: 2  
+"4px" - 2 // Output: NaN
+"  -9  " + 5 // Output: " -9 5"
+"  -9  " - 5 // Output: -14
+null + 1 // Output: 1
+undefined + 1 // Output: NaN
+" \t \n" - 2 // Output: -2
+
+//TODO: Task 4
+// * Fix the addition
+let a = prompt("First number?", 1);
+let b = prompt("Second number?", 2);
+
+alert(Number(a) + Number(b)); // 3
