@@ -184,3 +184,51 @@ if (login == 'Employee') {
 }
 // console.log(message)
 // let message = (login == 'Employee') ? 'Hello' : (login == 'Director') ? 'Greetings' : (login == '') ? 'No login' : '';
+
+
+//? Logical Operators
+// The AND operator (&&) returns true if both operands are true; otherwise, it returns false.
+// The OR operator (||) returns true if at least one of the operands is true; otherwise, it returns false.
+// The NOT operator (!) returns true for false statements and false for true statements.
+
+// TODO: Task 1
+// What will the code below output?
+// alert( null || 2 || undefined ); // Output: 2
+
+// TODO: Task 2
+// What will the code below output?
+// alert( alert(1) || 2 || alert(3) ); // Output: 1, 2
+
+// TODO: Task 3
+// What is the result of AND ?
+// alert( 1 && null && 2 ); // Output: null
+
+// TODO: Task 4
+// What will this code output?
+// alert( alert(1) && alert(2) ); // Output: 1, undefined
+
+// TODO: Task 5
+// What will the result be?
+// alert( null || 2 && 3 || 4 ); // Output: 3
+// The precedence of AND && is higher than ||, so it executes first.
+
+// The result of 2 && 3 = 3, so the expression becomes: null || 3 || 4
+
+// TODO: Task 6
+// Check the range between
+// Write an “if” condition to check that age is between 14 and 90 inclusively.
+// “Inclusively” means that age can reach the edges 14 or 90.
+// if (age >= 14 && age <= 90);
+
+// TODO: Task 7
+// Check the range outside
+// Write an if condition to check that age is NOT between 14 and 90 inclusively.
+// Create two variants: the first one using NOT !, the second one – without it.
+// if (!(age >= 14 && age <= 90));
+
+// TODO: Task 8
+// A question about "if"
+// Which of these alerts are going to execute?
+// if (-1 || 0) alert( 'first' ); // true
+// if (-1 && 0) alert( 'second' ); // false
+// if (null || -1 && 1) alert( 'third' ); // true
