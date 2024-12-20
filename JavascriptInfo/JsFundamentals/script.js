@@ -50,10 +50,10 @@ let currentVisitorName = 'John';
 
 //? Type Conversions
 // String Conversion
-let value = true;
+// let value = true;
 // console.log(typeof value); // boolean
 
-value = String(value); // now value is a string "true"
+//value = String(value); // now value is a string "true"
 // console.log(typeof value); // string
 
 // Numeric Conversion
@@ -121,3 +121,66 @@ undefined == null // false
 undefined === null // false
 null == "\n0\n" // false
 null === +"\n0\n" //false
+
+//? Conditional branching:
+// TODO: Task 1
+if ("0") {
+  console.log('Hello'); // Output: Hello
+}
+
+// TODO: Task 2
+// Using the if..else construct, write the code which asks: ‘What is the “official” name of JavaScript?’
+
+// If the visitor enters “ECMAScript”, then output “Right!”, otherwise – output: “You don’t know? ECMAScript!”
+
+// let officialName = prompt("What is the “official” name of JavaScript?", "");
+// if (officialName === "ECMAScript") {
+//   alert("Right!");
+// } else {
+//   alert("You don't know? ECMAScript!");
+// }
+
+// TODO: Task 3
+// Using if..else, write the code which gets a number via prompt and then shows in alert:
+// 1, if the value is greater than zero,
+// -1, if less than zero,
+// 0, if equals zero.
+
+// let value = prompt('Type a number', 0);
+
+// if (value > 0) {
+//   alert(1);
+// } else if (value < 0) {
+//   alert(-1);
+// } else {
+//   alert(0);
+// }
+
+// TODO: Task 4
+// Rewrite this if using the conditional operator '?':
+
+// let result;
+
+// if (a + b < 4) {
+//   result = 'Below';
+// } else {
+//   result = 'Over';
+// }
+// let result = (a + b < 4) ? 'Below' : 'Over';
+
+// TODO: Task 5
+// Rewrite if..else using multiple ternary operators '?'.
+
+let login = prompt('Enter your message here... ');
+let message;
+if (login == 'Employee') {
+  message = 'Hello';
+} else if (login == 'Director') {
+  message = 'Greetings';
+} else if (login == '') {
+  message = 'No login';
+} else {
+  message = '';
+}
+// console.log(message)
+// let message = (login == 'Employee') ? 'Hello' : (login == 'Director') ? 'Greetings' : (login == '') ? 'No login' : '';
