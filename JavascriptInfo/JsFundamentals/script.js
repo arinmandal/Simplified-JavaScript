@@ -60,19 +60,19 @@ let currentVisitorName = 'John';
 // console.log("6" / "2"); // Output: 3, strings are converted to numbers
 
 // Boolean Conversion
-//console.log(Boolean(1)); // Output: true
-//console.log(Boolean(0)); // Output: false
-//console.log(Boolean("hello")); // Output: true
-//console.log(Boolean("")); // Output: false
-//console.log(Boolean("0")); // Output: true
-//console.log(Boolean(" ")); // Output: true
-
+/* console.log(Boolean(1)); // Output: true
+console.log(Boolean(0)); // Output: false
+console.log(Boolean("hello")); // Output: true
+console.log(Boolean("")); // Output: false
+console.log(Boolean("0")); // Output: true
+console.log(Boolean(" ")); // Output: true
+ */
 //? Basic Operators
 //TODO: Task 1
 // * The postfix and prefix forms
-// let a = 1, b = 1;
-// let c = ++a; // 2;
-// let d = b++; // 1;
+/* let a = 1, b = 1;
+let c = ++a; // 2;
+let d = b++; // 1; */
 
 // TODO: Task 2
 // * Assignment result
@@ -83,7 +83,7 @@ let y = 1 + (x *= 2);
 
 // TODO: Task 3
 //* Type conversions
-"" + 1 + 0 // Output: 10
+/* "" + 1 + 0 // Output: 10
 "" - 1 + 0 // Output:
 true + false // Output: 1 
 6 / "3" // Output: 2
@@ -96,7 +96,7 @@ true + false // Output: 1
 "  -9  " - 5 // Output: -14
 null + 1 // Output: 1
 undefined + 1 // Output: NaN
-" \t \n" - 2 // Output: -2
+" \t \n" - 2 // Output: -2 */
 
 //TODO: Task 4
 // * Fix the addition
@@ -107,20 +107,20 @@ undefined + 1 // Output: NaN
 
 
 //? Comparison Operators
-// Greater/less than: a > b, a < b.
-// Greater/less than or equals: a >= b, a <= b.
-// Equals: a == b, please note the double equality sign == means the equality test, while a single one a = b means an assignment.
-// and === for the strict equality check. The strict equality check === compares two values without type conversion.
-// Not equals: In maths the notation is ≠, but in JavaScript it’s written as a != b.
-
+/* Greater/less than: a > b, a < b.
+Greater/less than or equals: a >= b, a <= b.
+Equals: a == b, please note the double equality sign == means the equality test, while a single one a = b means an assignment.
+and === for the strict equality check. The strict equality check === compares two values without type conversion.
+Not equals: In maths the notation is ≠, but in JavaScript it’s written as a != b.
+ */
 // TODO: Task 1
-5 > 4 // true
+/* 5 > 4 // true
 "apple" > "pineapple" // true
 "2" > "12" //false
 undefined == null // false
 undefined === null // false
 null == "\n0\n" // false
-null === +"\n0\n" //false
+null === +"\n0\n" //false */
 
 //? Conditional branching:
 // TODO: Task 1
@@ -133,45 +133,45 @@ if ("0") {
 
 // If the visitor enters “ECMAScript”, then output “Right!”, otherwise – output: “You don’t know? ECMAScript!”
 
-// let officialName = prompt("What is the “official” name of JavaScript?", "");
-// if (officialName === "ECMAScript") {
-//   alert("Right!");
-// } else {
-//   alert("You don't know? ECMAScript!");
-// }
+/* let officialName = prompt("What is the “official” name of JavaScript?", "");
+if (officialName === "ECMAScript") {
+  alert("Right!");
+} else {
+  alert("You don't know? ECMAScript!");
+} */
 
 // TODO: Task 3
 // Using if..else, write the code which gets a number via prompt and then shows in alert:
-// 1, if the value is greater than zero,
-// -1, if less than zero,
-// 0, if equals zero.
+/* 1, if the value is greater than zero,
+-1, if less than zero,
+0, if equals zero. */
 
-// let value = prompt('Type a number', 0);
+/* let value = prompt('Type a number', 0);
 
-// if (value > 0) {
-//   alert(1);
-// } else if (value < 0) {
-//   alert(-1);
-// } else {
-//   alert(0);
-// }
+if (value > 0) {
+  alert(1);
+} else if (value < 0) {
+  alert(-1);
+} else {
+  alert(0);
+} */
 
 // TODO: Task 4
 // Rewrite this if using the conditional operator '?':
+/*
+let result;
 
-// let result;
-
-// if (a + b < 4) {
-//   result = 'Below';
-// } else {
-//   result = 'Over';
-// }
-// let result = (a + b < 4) ? 'Below' : 'Over';
-
+if (a + b < 4) {
+  result = 'Below';
+} else {
+  result = 'Over';
+}
+let result = (a + b < 4) ? 'Below' : 'Over';
+ */
 // TODO: Task 5
 // Rewrite if..else using multiple ternary operators '?'.
 
-let login = prompt('Enter your message here... ');
+/* let login = prompt('Enter your message here... ');
 let message;
 if (login == 'Employee') {
   message = 'Hello';
@@ -182,8 +182,8 @@ if (login == 'Employee') {
 } else {
   message = '';
 }
-// console.log(message)
-// let message = (login == 'Employee') ? 'Hello' : (login == 'Director') ? 'Greetings' : (login == '') ? 'No login' : '';
+console.log(message)
+let message = (login == 'Employee') ? 'Hello' : (login == 'Director') ? 'Greetings' : (login == '') ? 'No login' : ''; */
 
 
 //? Logical Operators
@@ -229,45 +229,98 @@ if (login == 'Employee') {
 // TODO: Task 8
 // A question about "if"
 // Which of these alerts are going to execute?
-if (-1 || 0) alert( 'first' ); // true
+/* if (-1 || 0) alert( 'first' ); // true
 if (-1 && 0) alert( 'second' ); // false
-if (null || -1 && 1) alert('third'); // true
+if (null || -1 && 1) alert('third'); // true */
 
 // ? Nullish coalescing operator '??'
 // The nullish coalescing operator ?? provides a way to specify a default value.
 
-// let user;
-// alert(user ?? "Anonymous"); // Anonymous (user is undefined)
+/* let user;
+alert(user ?? "Anonymous"); // Anonymous (user is undefined)
 
-// let user = "John";
-// alert(user ?? "Anonymous"); // John (user is not null/undefined)
+let user = "John";
+alert(user ?? "Anonymous"); // John (user is not null/undefined) */
 
-let firstName = null;
+/* let firstName = null;
 let lastName = null;
 let nickName = "Supercoder";
-
+ */
 // shows the first defined value:
 // alert(firstName ?? lastName ?? nickName ?? "Anonymous"); // Supercoder
 
 // ! Comparison with ||
 // The OR || operator, on the other hand, would return the first truthy value.
-
-// let height = 0;
-// alert(height || 100); // 100
-// alert(height ?? 100); // 0
+/*
+let height = 0;
+alert(height || 100); // 100
+alert(height ?? 100); // 0 */
 
 // ! Precedence
 // The precedence of the ?? operator is about the same as ||, and it’s higher than ? and =, so ?? is executed first.
 
-// let height = null;
-// let width = null;
+/* let height = null;
+let width = null;
 
-// // important: use parentheses
-// let area = (height ?? 100) * (width ?? 50);
+// important: use parentheses
+let area = (height ?? 100) * (width ?? 50);
 
-// alert(area); // 5000
+alert(area); // 5000 */
 
 //! AND operator with Nullish coalescing operator
 
 // let y = (0 && 1) ?? 2;
 // alert(0); // 0
+
+
+//? Loops: while and for
+// TODO: Task 1
+// Last loop value
+/* let i = 3;
+while (i) {
+  console.log(i--); // Output: 3, 2, 1
+} */
+
+// TODO: Task 2
+// Which values does the while loop show?
+// The prefix form ++i:
+/* let i = 0;
+
+while (++i < 5) {
+  console.log(i); // Output: 1, 2, 3, 4
+} */
+// The postfix form
+/* let i = 0;
+
+while (i++ < 5) {
+  console.log(i); // Output: 1, 2, 3, 4, 5
+} */
+
+// TODO: Task 3
+// Which values get shown by the “for” loop?
+/* Prefix
+for (let i = 0; i < 5; ++i) alert(i) // Output: 0, 1, 2, 3, 4 */
+
+/* Postfix
+for (let i = 0; i < 5; i++) alert(i) // Output: 0, 1, 2, 3, 4
+ */
+// TDOO: Task 4
+// Output even numbers in the loop
+/* for (let i = 2; i <= 10; i++) {
+  if (i % 2 == 0) {
+    console.log(i); // Output: 2, 4, 6, 8, 10
+  } */
+
+// TODO: Task 5
+// Replace “for” with “while”
+/* for (let i = 0; i < 3; i++) {
+  console.log(`number ${i}!`);
+} */
+
+/* 
+let i = 0;
+while( i < 3){
+  console.log(`number ${i}!`);
+  i++;
+} 
+*/
