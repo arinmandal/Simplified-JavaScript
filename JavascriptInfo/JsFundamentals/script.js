@@ -229,6 +229,45 @@ if (login == 'Employee') {
 // TODO: Task 8
 // A question about "if"
 // Which of these alerts are going to execute?
-// if (-1 || 0) alert( 'first' ); // true
-// if (-1 && 0) alert( 'second' ); // false
-// if (null || -1 && 1) alert( 'third' ); // true
+if (-1 || 0) alert( 'first' ); // true
+if (-1 && 0) alert( 'second' ); // false
+if (null || -1 && 1) alert('third'); // true
+
+// ? Nullish coalescing operator '??'
+// The nullish coalescing operator ?? provides a way to specify a default value.
+
+// let user;
+// alert(user ?? "Anonymous"); // Anonymous (user is undefined)
+
+// let user = "John";
+// alert(user ?? "Anonymous"); // John (user is not null/undefined)
+
+let firstName = null;
+let lastName = null;
+let nickName = "Supercoder";
+
+// shows the first defined value:
+// alert(firstName ?? lastName ?? nickName ?? "Anonymous"); // Supercoder
+
+// ! Comparison with ||
+// The OR || operator, on the other hand, would return the first truthy value.
+
+// let height = 0;
+// alert(height || 100); // 100
+// alert(height ?? 100); // 0
+
+// ! Precedence
+// The precedence of the ?? operator is about the same as ||, and it’s higher than ? and =, so ?? is executed first.
+
+// let height = null;
+// let width = null;
+
+// // important: use parentheses
+// let area = (height ?? 100) * (width ?? 50);
+
+// alert(area); // 5000
+
+//! AND operator with Nullish coalescing operator
+
+// let y = (0 && 1) ?? 2;
+// alert(0); // 0
