@@ -100,7 +100,24 @@ undefined + 1 // Output: NaN
 
 //TODO: Task 4
 // * Fix the addition
-let a = prompt("First number?", 1);
-let b = prompt("Second number?", 2);
+// let a = prompt("First number?", 1);
+// let b = prompt("Second number?", 2);
 
-alert(Number(a) + Number(b)); // 3
+// alert(Number(a) + Number(b)); // 3
+
+
+//? Comparison Operators
+// Greater/less than: a > b, a < b.
+// Greater/less than or equals: a >= b, a <= b.
+// Equals: a == b, please note the double equality sign == means the equality test, while a single one a = b means an assignment.
+// and === for the strict equality check. The strict equality check === compares two values without type conversion.
+// Not equals: In maths the notation is ≠, but in JavaScript it’s written as a != b.
+
+// TODO: Task 1
+5 > 4 // true
+"apple" > "pineapple" // true
+"2" > "12" //false
+undefined == null // false
+undefined === null // false
+null == "\n0\n" // false
+null === +"\n0\n" //false
