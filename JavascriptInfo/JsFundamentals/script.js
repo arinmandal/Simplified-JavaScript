@@ -124,9 +124,9 @@ null === +"\n0\n" //false */
 
 //? Conditional branching:
 // TODO: Task 1
-if ("0") {
+/* if ("0") {
   console.log('Hello'); // Output: Hello
-}
+} */
 
 // TODO: Task 2
 // Using the if..else construct, write the code which asks: ‘What is the “official” name of JavaScript?’
@@ -432,11 +432,39 @@ function checkAge(age) {
 // min(3, -1) == -1
 // min(1, 1) == 1
 
-function min(a, b) {
+/* function min(a, b) {
   if (a > b) {
     return a;
   } else{
     return b;
   }
-}
+} */
 // min(2, 5); // Output: 5
+
+//? Function expressions
+// Function Declaration
+/* function sayHi() {
+  alert( "Hello" );
+} */
+
+// Function Expression
+
+/* let sayHi = function () { 
+  alert("Hello");
+} */
+
+  //! Callback Functions 
+// Function that takes a callback function as an argument
+/* function greetUser(callback) {
+  const name = prompt("What's your name?");
+  callback(name);
+}
+
+// Callback function
+function sayHello(name) {
+  alert("Hello, " + name + "!");
+}
+
+// Using the greetUser function with the sayHello function as a callback
+greetUser(sayHello);
+ */
