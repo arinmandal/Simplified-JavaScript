@@ -398,3 +398,45 @@ if (a == 2 || a == 3) {
     alert('2, 3');
     break;
 } */
+
+//? Functions
+// TODO: Task 1
+// Is "else" required?
+
+/* function checkAge() {
+  let age = prompt("Enter your age:");
+  if (age > 18) {
+    return true;
+  } else {
+    return confirm("Do you have permission from your parents?");
+  }
+}
+
+checkAge(); */
+// No, else is not required.
+
+// TODO: Task 2
+// Rewrite the function using '?' or '||'
+
+/* function checkAge(age) {
+  return (age > 18) ? true : confirm("Do you have permission from your parents?");
+}
+
+function checkAge(age) {
+  return (age > 18) || confirm("Do you have permission from your parents?");
+} */
+
+// TODO: Task 3
+// Write a function min(a,b) which returns the least of two numbers a and b.
+// min(2, 5) == 2
+// min(3, -1) == -1
+// min(1, 1) == 1
+
+function min(a, b) {
+  if (a > b) {
+    return a;
+  } else{
+    return b;
+  }
+}
+// min(2, 5); // Output: 5
