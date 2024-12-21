@@ -453,7 +453,7 @@ function checkAge(age) {
   alert("Hello");
 } */
 
-  //! Callback Functions 
+//! Callback Functions
 // Function that takes a callback function as an argument
 /* function greetUser(callback) {
   const name = prompt("What's your name?");
@@ -468,3 +468,31 @@ function sayHello(name) {
 // Using the greetUser function with the sayHello function as a callback
 greetUser(sayHello);
  */
+
+
+//? Arrow Functions
+
+/* let sum = (a, b) => a + b;
+console.log(sum(1, 2)); // Output: 3 */
+
+//TODO: Task 1 ;
+// Rewrite with arrow functions
+/* function ask(question, yes, no) {
+  if (confirm(question)) yes();
+  else no();
+} */
+
+/* ask(
+  "Do you agree?",
+  function () { alert("You agreed."); },
+  function () { alert("You canceled the execution."); }
+); */
+
+
+/* let ask = (question, yes, no) => {
+  if (confirm(question)) yes();
+  else no();
+}
+
+ask('Do you agree', () => alert("You agreed."), () => alert("You canceled the execution.")); */
+
