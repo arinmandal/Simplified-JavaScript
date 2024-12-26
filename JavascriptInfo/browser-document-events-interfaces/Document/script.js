@@ -36,3 +36,40 @@
 // ! Navigator Object
 // console.log(navigator.appName); // Returns the name of the browser
 // console.log(navigator.appVersion); // Returns the version information of the browser
+
+
+//? DOM tree
+
+/* <!DOCTYPE HTML>
+<html> Root node
+<head> Child node of html
+  <title>
+  About elk ~ text node
+  </title> Child node of head
+</head>
+<body> Child node of html
+  The truth about elk.
+</body>
+</html> */
+
+// Tree Structure
+/* ▾
+HTML
+▾
+HEAD
+#text ↵␣␣
+▾
+TITLE
+#text About elk
+#text ↵
+#text ↵
+▾
+BODY
+#text ↵␣␣The truth about elk.↵ */
+
+// ? Most Commonly Used Nodes
+// 1. document ~ root node
+// 2. element ~`<p>`, `<div>`, `<ul>`, `<li>`, `<a>`, `<img>`, `<form>`, `<input>`, `<button>`
+// 3. comments – sometimes we can put information there, it won’t be shown, but JS can read it from the DOM.
+// 4. text  ~ text inside elements
+// 5. attributes ~ class, id, href, src, style, etc.
