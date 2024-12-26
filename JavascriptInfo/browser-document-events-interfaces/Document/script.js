@@ -73,3 +73,87 @@ BODY
 // 3. comments – sometimes we can put information there, it won’t be shown, but JS can read it from the DOM.
 // 4. text  ~ text inside elements
 // 5. attributes ~ class, id, href, src, style, etc.
+
+//? Walking the DOM
+
+/* // Accessing the document object
+var doc = document;
+
+// Accessing the document element (<html>)
+var docElement = document.documentElement;
+
+// Accessing the body element
+var body = document.body;
+
+// Assuming there is a <div> element in the body
+var div = document.querySelector('div');
+
+// Accessing the parent node of the <div>
+var parent = div.parentNode;
+
+// Accessing the previous sibling of the <div>
+var prevSibling = div.previousSibling;
+
+// Accessing the next sibling of the <div>
+var nextSibling = div.nextSibling;
+
+// Accessing the first child of the <div>
+var firstChild = div.firstChild;
+
+// Accessing the last child of the <div>
+var lastChild = div.lastChild;
+
+// Accessing all child nodes of the <div>
+var childNodes = div.childNodes; */
+
+
+// In the DOM, the null value means “doesn’t exist” or “no such node”.
+{/* <html>
+
+  <head>
+    <script>
+      alert( "From HEAD: " + document.body ); // null, there's no <body> yet
+    </script>
+  </head>
+</html> */}
+
+// Children, firstChild, lastChild, childNodes
+// Child nodes (or children) – elements that are direct children. In other words, they are nested exactly in the given one. For instance, <head> and <body> are children of <html> element.
+// Descendants – all elements that are nested in the given one, including children, their children and so on.
+
+// Properties firstElementChild and lastElementChild give fast access to the first and last children.
+
+let firstChild = document.body.firstElementChild;
+// console.log(body); <div>...</div>
+
+let lastChild = document.body.lastElementChild;
+// console.log(lastChild); // <script src="script.js"></script>
+
+// for (let node of document.body.childNodes) {
+//   alert(node); // shows all nodes from the collection
+// }
+
+// !Siblings and the parent
+// Siblings are nodes that are children of the same parent.
+
+// For instance, here <head> and <body> are siblings:
+{/* <html>
+  <head>...</head><body>...</body>
+</html> */}
+
+// TODO : Task 1
+// DOM Children
+
+{/* <html>
+<body>
+  <div>Users:</div>
+  <ul>
+    <li>John</li>
+    <li>Pete</li>
+  </ul>
+</body>
+</html> */}
+
+// The <div> DOM node? document.body.firstElementChild
+// The <ul> DOM node? document.body.lastElementChild
+// The second <li> (with Pete)? console.log(document.body.children[1].lastElementChild.innerHTML);
