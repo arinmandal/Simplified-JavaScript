@@ -157,3 +157,27 @@ let lastChild = document.body.lastElementChild;
 // The <div> DOM node? document.body.firstElementChild
 // The <ul> DOM node? document.body.lastElementChild
 // The second <li> (with Pete)? console.log(document.body.children[1].lastElementChild.innerHTML);
+
+//? Searching: getElement*, querySelector*
+
+// 1. document.getElementById
+// let elem = document.getElementById('heading');
+// console.log(elem); // <h1 id="heading">Hello, World!</h1>
+
+// 2. document.querySelector
+
+// let elem = document.querySelectorAll('ul > li:first-child');
+// console.log(elem[0].innerHTML); Item 1
+
+// 3. document.querySelectorAll
+// let elem = document.querySelectorAll('ul > li:last-child');
+// console.log(elem[0].innerHTML); Item 2
+
+// 4. document.getElementsByTagName
+// let elem = document.getElementsByTagName('li');
+// console.log(elem[0].innerHTML); // Item 1
+
+// 5. document.getElementsByClassName
+// let elem = document.getElementsByClassName('list');
+// console.log(elem[0].innerHTML); // Item 1
+
