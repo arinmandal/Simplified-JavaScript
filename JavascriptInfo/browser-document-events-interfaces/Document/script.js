@@ -205,8 +205,8 @@ DOM nodes also have other properties depending on their class. For instance, <in
 However, HTML attributes and DOM properties are not always the same, as we’ll see in the next chapter. */
 
 // Change outer HTML
-let elem = document.getElementById('heading');
-elem.outerHTML = '<h2>New Heading</h2>';
+// let elem = document.getElementById('heading');
+// elem.outerHTML = '<h2>New Heading</h2>';
 
 // TODO: Count descendants
 // There’s a tree structured as nested ul/li.
@@ -216,12 +216,12 @@ elem.outerHTML = '<h2>New Heading</h2>';
 // What’s the text inside it (without the subtree)
 // The number of nested <li> – all descendants, including the deeply nested ones.
 
-for (let li of document.querySelectorAll('li')) {
-  let title = li.firstChild.data;
-  let count = li.getElementsByTagName('li').length;
-  // title is the text in <li> before any other nodes
-  console.log(title + ': ' + count);
-}
+// for (let li of document.querySelectorAll('li')) {
+//   let title = li.firstChild.data;
+//   let count = li.getElementsByTagName('li').length;
+//   // title is the text in <li> before any other nodes
+//   console.log(title + ': ' + count);
+// }
 
 // TODO : Where's the "document" in the hierarchy?
 
@@ -231,3 +231,59 @@ Does it inherit from Node or Element, or maybe HTMLElement? */
 
 // alert(document); // [object HTMLDocument]
 // alert(document.constructor.name); // HTMLDocument
+
+// ?Attributes and properties
+
+// DOM Properties
+// document.body.myData = {
+//   name: 'Caesar',
+//   title: 'Imperator'
+// };
+
+
+// alert(document.body.myData.title); // Imperator
+// document.body.sayTagName = function() {
+//   alert(this.tagName);
+// };
+
+// document.body.sayTagName(); // BODY
+
+// We can also modify built-in prototypes like Element.prototype
+
+// Element.prototype.sayHi = function() {
+//   alert(`Hello, I'm ${this.tagName}`);
+// };
+
+// alert(document.body.sayHi());
+
+// ? HTML attributes
+
+/* elem.hasAttribute(name) – checks for existence.
+elem.getAttribute(name) – gets the value.
+elem.setAttribute(name, value) – sets the value.
+elem.removeAttribute(name) – removes the attribute. */
+
+// let attr = document.getElementById('heading');
+// attr.setAttribute('class', "newHeading");
+// console.log(attr.getAttribute('class'));
+
+
+// TODO : Get the attribute
+
+// Write the code to select the element with data-widget-name attribute from the document and to read its value.
+
+/* <!DOCTYPE html>
+<html>
+<body>
+
+  <div data-widget-name="menu">Choose the genre</div>
+
+  <script>
+    /* your code */
+  </script>
+</body>
+</html > 
+*/
+
+// let widget = document.querySelector('[data-widget-name]');
+// console.log(widget.getAttribute('data-widget-name'));
