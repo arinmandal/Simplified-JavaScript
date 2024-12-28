@@ -181,3 +181,53 @@ let lastChild = document.body.lastElementChild;
 // let elem = document.getElementsByClassName('list');
 // console.log(elem[0].innerHTML); // Item 1
 
+
+// ? Node properties: type, tag and contents
+
+/* Main DOM node properties are:
+
+nodeType
+We can use it to see if a node is a text or an element node. It has a numeric value: 1 for elements,3 for text nodes, and a few others for other node types. Read-only.
+nodeName/tagName
+For elements, tag name (uppercased unless XML-mode). For non-element nodes nodeName describes what it is. Read-only.
+innerHTML
+The HTML content of the element. Can be modified.
+outerHTML
+The full HTML of the element. A write operation into elem.outerHTML does not touch elem itself. Instead it gets replaced with the new HTML in the outer context.
+nodeValue/data
+The content of a non-element node (text, comment). These two are almost the same, usually we use data. Can be modified.
+textContent
+The text inside the element: HTML minus all <tags>. Writing into it puts the text inside the element, with all special characters and tags treated exactly as text. Can safely insert user-generated text and protect from unwanted HTML insertions.
+hidden
+When set to true, does the same as CSS display:none.
+DOM nodes also have other properties depending on their class. For instance, <input> elements (HTMLInputElement) support value, type, while <a> elements (HTMLAnchorElement) support href etc. Most standard HTML attributes have a corresponding DOM property.
+
+However, HTML attributes and DOM properties are not always the same, as we’ll see in the next chapter. */
+
+// Change outer HTML
+let elem = document.getElementById('heading');
+elem.outerHTML = '<h2>New Heading</h2>';
+
+// TODO: Count descendants
+// There’s a tree structured as nested ul/li.
+
+// Write the code that for each <li> shows:
+
+// What’s the text inside it (without the subtree)
+// The number of nested <li> – all descendants, including the deeply nested ones.
+
+for (let li of document.querySelectorAll('li')) {
+  let title = li.firstChild.data;
+  let count = li.getElementsByTagName('li').length;
+  // title is the text in <li> before any other nodes
+  console.log(title + ': ' + count);
+}
+
+// TODO : Where's the "document" in the hierarchy?
+
+/* Which class does the document belong to?
+What’s its place in the DOM hierarchy?
+Does it inherit from Node or Element, or maybe HTMLElement? */
+
+// alert(document); // [object HTMLDocument]
+// alert(document.constructor.name); // HTMLDocument
