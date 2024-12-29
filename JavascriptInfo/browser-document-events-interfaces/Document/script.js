@@ -397,7 +397,7 @@ The call should create a calendar for the given year/month and put it inside ele
 The calendar should be a table, where a week is <tr>, and a day is <td>. The table top should be <th> with weekday names: the first day should be Monday, and so on till Sunday.
 For instance, createCalendar(cal, 2012, 9) should generate in element cal the following calendar: */
 
-/* 
+/*
 function createCalendar(elem, year, month) {
 
   let mon = month - 1; // months in JS are 0..11, not 1..12
@@ -461,6 +461,12 @@ JavaScript can modify both classes and style properties. */
 
 
 
+// TODO : Task 1
+
+// Create a Notification
+
+// Write a function showNotification(options) that creates a notification: <div class="notification"> with the given content. The notification should automatically disappear after 1.5 seconds.
+
 /* function showNotification({ top, right, html, className }) {
   let div = document.createElement('div');
   div.className = "notification";
@@ -480,6 +486,7 @@ JavaScript can modify both classes and style properties. */
 showNotification({
   top: 200,
   right: 100,
-  html: "Hello!", 
-  className: "welcome" 
+  html: "Hello!",
+  className: "welcome"
 }); */
+
