@@ -450,3 +450,36 @@ createCalendar(calendar, 2012, 9); */
 // Insert the HTML in the list
 // Write the code to insert <li>2</li><li>3</li> between two <li> here:
 // one.insertAdjacentHTML('afterend', '<li>2</li><li>3</li>');
+
+
+// ? Styles and classes
+
+/* There are generally two ways to style an element:
+Create a class in CSS and add it: <div class="...">
+Write properties directly into style: <div style="...">.
+JavaScript can modify both classes and style properties. */
+
+
+
+/* function showNotification({ top, right, html, className }) {
+  let div = document.createElement('div');
+  div.className = "notification";
+  if (className) {
+    div.classList.add(className);
+  }
+
+  div.style.top = top + 'px';
+  div.style.right = right + 'px';
+  div.style.color = "red";
+  div.innerHTML = html;
+  document.body.append(div);
+
+  setTimeout(() => div.remove(), 1500);
+}
+
+showNotification({
+  top: 200,
+  right: 100,
+  html: "Hello!", 
+  className: "welcome" 
+}); */
