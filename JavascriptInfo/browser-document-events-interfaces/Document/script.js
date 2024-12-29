@@ -272,18 +272,181 @@ elem.removeAttribute(name) – removes the attribute. */
 
 // Write the code to select the element with data-widget-name attribute from the document and to read its value.
 
-/* <!DOCTYPE html>
-<html>
-<body>
+// /* <!DOCTYPE html>
+// <html>
+// <body>
 
-  <div data-widget-name="menu">Choose the genre</div>
+//   <div data-widget-name="menu">Choose the genre</div>
 
-  <script>
-    /* your code */
-  </script>
-</body>
-</html > 
-*/
+//   <script>
+//     /* your code */
+//   </script>
+// </body>
+// </html >
+// */
 
 // let widget = document.querySelector('[data-widget-name]');
 // console.log(widget.getAttribute('data-widget-name'));
+
+// ? Modifying the document
+
+// DOM modification is the key to creating “live” pages.
+
+/* // 1. Creating nodes
+let div = document.createElement('div');
+div.innerHTML = '<p>Hello, World!</p>';
+div.style.background = 'red';
+document.body.appendChild(div);
+
+// 2. Removing nodes
+let elem = document.getElementById('heading');
+elem.remove();  
+
+// 3. Cloning nodes
+let clone = div.cloneNode(true);
+document.body.appendChild(clone);
+
+// 4. Inserting nodes
+let p = document.createElement('p');
+p.innerHTML = 'Hello, World!';
+document.body.insertBefore(p, document.body.firstChild);
+
+// 5. Replacing nodes
+let newElem = document.createElement('p');
+newElem.innerHTML = 'New Element';
+document.body.replaceChild(newElem, document.body.firstChild);
+
+// 6. The “insertAdjacent” methods
+// elem.insertAdjacentHTML(where, html) – insert HTML at the position defined by where.
+// elem.insertAdjacentElement(where, elem) – insert elem at the position defined by where.
+// elem.insertAdjacentText(where, text) – insert text at the position defined by where.
+
+// elem.insertAdjacentHTML('beforebegin', '<p>Hello, World!</p>');
+// elem.insertAdjacentHTML('afterbegin', '<p>Hello, World!</p>');
+// elem.insertAdjacentHTML('beforeend', '<p>Hello, World!</p>');
+// elem.insertAdjacentHTML('afterend', '<p>Hello, World!</p>');
+
+   */
+
+// TODO : Task 1
+/* createTextNode vs innerHTML vs textContent
+We have an empty DOM element elem and a string text.
+Which of these 3 commands will do exactly the same?
+elem.append(document.createTextNode(text))
+elem.innerHTML = text
+elem.textContent = text */
+
+{/* <div id="elem1"></div>
+<div id="elem2"></div>
+<div id="elem3"></div>
+<script>
+  let text = '<b>text</b>';
+
+  elem1.append(document.createTextNode(text));
+  elem2.innerHTML = text;
+  elem3.textContent = text;
+</script> */}
+
+// TODO: Task 2
+// Clear the element
+// Create a function clear(element) that removes all children from the elem.
+
+{/* <ol id="elem">
+  <li>Hello</li>
+  <li>World</li>
+</ol>
+
+<script>
+function clear(elem) {
+  elem.innerHTML = '';
+}
+
+</script> */}
+
+// TODO: Task 3
+// Create a list
+// Write an interface to create a list from user input.
+// For every list item:
+// Ask a user about its content using prompt.
+// Create the <li> with it and add it to <ul>.
+// Continue until the user cancels the input (by pressing Esc or via an empty entry).
+// All elements should be created dynamically.
+
+// If a user types HTML-tags, they should be treated like a text.
+
+/* let ul = document.createElement('ul');
+document.body.append(ul);
+
+while (true) {
+  let data = prompt("Enter the text for the list item", "");
+
+  if (!data) {
+    break;
+  }
+
+  let li = document.createElement('li');
+  li.textContent = data;
+  ul.append(li);
+} */
+
+
+//TODO : Task 4
+// Create a calender
+/* Write a function createCalendar(elem, year, month).
+The call should create a calendar for the given year/month and put it inside elem.
+The calendar should be a table, where a week is <tr>, and a day is <td>. The table top should be <th> with weekday names: the first day should be Monday, and so on till Sunday.
+For instance, createCalendar(cal, 2012, 9) should generate in element cal the following calendar: */
+
+/* 
+function createCalendar(elem, year, month) {
+
+  let mon = month - 1; // months in JS are 0..11, not 1..12
+  let d = new Date(year, mon);
+
+  let table = '<table><tr><th>MO</th><th>TU</th><th>WE</th><th>TH</th><th>FR</th><th>SA</th><th>SU</th></tr><tr>';
+
+  // spaces for the first row
+  // from Monday till the first day of the month
+  // * * * 1  2  3  4
+  for (let i = 0; i < getDay(d); i++) {
+    table += '<td></td>';
+  }
+
+  // <td> with actual dates
+  while (d.getMonth() == mon) {
+    table += '<td>' + d.getDate() + '</td>';
+
+    if (getDay(d) % 7 == 6) { // sunday, last day of week - newline
+      table += '</tr><tr>';
+    }
+
+    d.setDate(d.getDate() + 1);
+  }
+
+  // add spaces after last days of month for the last row
+  // 29 30 31 * * * *
+  if (getDay(d) != 0) {
+    for (let i = getDay(d); i < 7; i++) {
+      table += '<td></td>';
+    }
+  }
+
+  // close the table
+  table += '</tr></table>';
+
+  elem.innerHTML = table;
+}
+
+function getDay(date) { // get day number from 0 (monday) to 6 (sunday)
+  let day = date.getDay();
+  if (day == 0) day = 7; // make Sunday (0) the last day
+  return day - 1;
+}
+
+createCalendar(calendar, 2012, 9); */
+
+
+// TODO : Task 5
+// Insert the HTML in the list
+// Write the code to insert <li>2</li><li>3</li> between two <li> here:
+// one.insertAdjacentHTML('afterend', '<li>2</li><li>3</li>');
