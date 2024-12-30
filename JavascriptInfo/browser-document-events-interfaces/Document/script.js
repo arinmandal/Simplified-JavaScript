@@ -520,7 +520,7 @@ alert(scrollWidth); */
 
 // ? Coordinates
 
-let container = document.getElementById('container');
+/* let container = document.getElementById('container');
 container.style.border = '1px solid black';
 container.style.position = 'relative';
 container.style.width = '200px';
@@ -536,4 +536,19 @@ span.style.height = '20px';
 span.style.backgroundColor = 'red';
 
 span.style.left = Math.round(container.clientWidth / 2 - span.offsetWidth / 2) + 'px';
-span.style.top = Math.round(container.clientHeight / 2 - span.offsetHeight / 2) + 'px';
+span.style.top = Math.round(container.clientHeight / 2 - span.offsetHeight / 2) + 'px'; */
+
+
+// ? Window sizes and scrolling
+// How to get window width and height
+// To get window width and height, we can use the clientWidth/clientHeight of document.documentElement:
+// alert(document.documentElement.clientHeight);
+// alert(document.documentElement.clientwidth);
+
+// Get the current scroll
+// alert('Current scroll from the top: ' + window.pageYOffset);
+// alert('Current scroll from the left: ' + window.pageXOffset);
+
+// Also available as window properties scrollX and scrollY. They are equal to pageXOffset/pageYOffset.
+
+// Scrolling: scrollTo, scrollBy, scrollIntoView
