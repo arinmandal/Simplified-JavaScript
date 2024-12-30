@@ -490,3 +490,50 @@ showNotification({
   className: "welcome"
 }); */
 
+//? Element size and scrolling
+// TODO: Task 1
+// Scroll to the bottom
+/* The elem.scrollTop property is the size of the scrolled out part from the top. How to get the size of the bottom scroll (let’s call it scrollBottom)? */
+
+// let scrollBottom = elem.scrollHeight - elem.scrollTop - elem.clientHeight;
+
+// TODO: Task 2
+// What is scrollbar width?
+/* Write the code that returns the width of a standard scrollbar.
+For Windows it usually varies between 12px and 20px. If the browser doesn’t reserve any space for it (the scrollbar is half-translucent over the text, also happens), then it may be 0px. */
+
+/* // create a div with the scroll
+let div = document.createElement('div');
+
+div.style.overflowY = 'scroll';
+div.style.width = '50px';
+div.style.height = '50px';
+
+// must put it in the document, otherwise sizes will be 0
+document.body.append(div);
+let scrollWidth = div.offsetWidth - div.clientWidth;
+
+div.remove();
+
+alert(scrollWidth); */
+
+
+// ? Coordinates
+
+let container = document.getElementById('container');
+container.style.border = '1px solid black';
+container.style.position = 'relative';
+container.style.width = '200px';
+container.style.height = '200px';
+
+
+let span = document.getElementById('box');
+span.style.position = 'absolute';
+// span.style.left = '50px';
+// span.style.top = '50px';
+span.style.width = '20px';
+span.style.height = '20px';
+span.style.backgroundColor = 'red';
+
+span.style.left = Math.round(container.clientWidth / 2 - span.offsetWidth / 2) + 'px';
+span.style.top = Math.round(container.clientHeight / 2 - span.offsetHeight / 2) + 'px';
