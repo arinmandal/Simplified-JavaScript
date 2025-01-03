@@ -51,3 +51,22 @@ button.onclick = () => alert('Button CLicked'); */
 {/* <button onclick="alert(this.innerHTML)">Click me</button> 
 button shows its contents using this.innerHTML */}
 
+// ? addEventListener
+// In previous examples, we can only assign one handler to an event.If we assign a second one, it overwrites the first one.
+
+// To add multiple event listeners to an element, we can use addEventListener.
+// ! The syntax is: element.addEventListener(event, handler[, options]);
+// ? event - The name of the event, e.g. "click".
+// ? handler - The function to run when the event occurs.
+// ? options - An options object.
+
+// To remove the handler, use removeEventListener:
+// btn.removeEventListener('click', handler);
+
+
+let btn = document.getElementById('myButton');
+btn.addEventListener('click', handler);
+function handler() {
+  alert('Clicked');
+  console.log('remove');
+}
