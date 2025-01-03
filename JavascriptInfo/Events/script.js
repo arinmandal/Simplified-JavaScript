@@ -25,3 +25,17 @@ focus – when the visitor focuses on an element, e.g. on an <input>. */
 // transitionend – when a CSS-animation finishes.
 
 
+// ? Event handler
+// To react on events we can assign a handler – a function that runs in case of an event.
+// Handlers are a way to run javascript code in case of user actions.
+
+// ? HTML Attribute
+// A handler can be set in HTML with an attribute named on<event> like onclick or onsubmit.
+
+// ! Event in HTML attribute
+
+function countRabbits() {
+  for (let i = 1; i <= 3; i++) {
+    alert(`Rabbit number ${i}`);
+  }
+}
