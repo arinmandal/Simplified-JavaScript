@@ -34,8 +34,20 @@ focus – when the visitor focuses on an element, e.g. on an <input>. */
 
 // ! Event in HTML attribute
 
-function countRabbits() {
+/* function countRabbits() {
   for (let i = 1; i <= 3; i++) {
     alert(`Rabbit number ${i}`);
   }
-}
+} */
+
+// ? DOM property
+// We can assign a handler to a DOM property.
+/* 
+let button = document.getElementById('myButton');
+button.onclick = () => alert('Button CLicked'); */
+// Assign a handler to elem.onclick, not elem.ONCLICK, because DOM properties are case-sensitive.
+
+// Accessing the element this
+{/* <button onclick="alert(this.innerHTML)">Click me</button> 
+button shows its contents using this.innerHTML */}
+
