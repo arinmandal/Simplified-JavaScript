@@ -97,3 +97,14 @@ let hideSelf = document.getElementById('hideSelf')
 hideSelf.addEventListener('click', () => {
   hideSelf.style.visibility = 'hidden';
 })
+
+// TODO: Task 3
+// ? Check which handler runs
+// There’s a button in the variable. There are no handlers on it.
+// Which handlers run on click after the following code? Which alerts show up?
+
+let runs = document.getElementById("runs")
+runs.addEventListener("click", () => alert("1")); // first
+runs.removeEventListener("click", () => alert("1"));
+runs.onclick = () => alert(2); // second
+
