@@ -75,8 +75,19 @@ function handler() {
 //? Event object
 
 let newBtn = document.getElementById('btnObj');
-newBtn.onclick = function(event) {
+newBtn.onclick = function (event) {
   alert(event.type + " at " + event.currentTarget);
   alert("Coordinates: " + event.clientX + ":" + event.clientY);
 }
+
+// TODO: Task 1
+// ? Hide On Click
+// Add JavaScript to the button to make <div id="text"> disappear when we click it.
+let hide = document.getElementById('hide')
+let para = document.getElementById('para')
+hide.addEventListener('click', () => {
+  para.style.display = 'none';
+})
+
+
 
