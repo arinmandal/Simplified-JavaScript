@@ -89,5 +89,11 @@ hide.addEventListener('click', () => {
   para.style.display = 'none';
 })
 
+// TODO: Task 2
+// ? Hide self
+// Create a button that hides itself on click.
 
-
+let hideSelf = document.getElementById('hideSelf')
+hideSelf.addEventListener('click', () => {
+  hideSelf.style.visibility = 'hidden';
+})
