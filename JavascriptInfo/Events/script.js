@@ -64,9 +64,19 @@ button shows its contents using this.innerHTML */}
 // btn.removeEventListener('click', handler);
 
 
-let btn = document.getElementById('myButton');
+/* let btn = document.getElementById('myButton');
 btn.addEventListener('click', handler);
 function handler() {
   alert('Clicked');
   console.log('remove');
+} */
+
+
+//? Event object
+
+let newBtn = document.getElementById('btnObj');
+newBtn.onclick = function(event) {
+  alert(event.type + " at " + event.currentTarget);
+  alert("Coordinates: " + event.clientX + ":" + event.clientY);
 }
+
