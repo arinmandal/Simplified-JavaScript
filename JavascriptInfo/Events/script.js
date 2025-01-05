@@ -108,3 +108,12 @@ runs.addEventListener("click", () => alert("1")); // first
 runs.removeEventListener("click", () => alert("1"));
 runs.onclick = () => alert(2); // second
 
+// TODO: Task 4
+//? Create a toggle menu
+document.querySelector('span').addEventListener('click', () => {
+  const ulElement = document.querySelector('ul');
+  if (ulElement.style.visibility === 'hidden') {
+    ulElement.style.visibility = 'visible';
+  }
+  else { ulElement.style.visibility = 'hidden'; }
+})
